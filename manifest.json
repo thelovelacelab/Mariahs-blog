@@ -1,0 +1,8 @@
+{
+  "name":"Mariah", 
+  "short_name": "Mariah", 
+  "start_url":"index.html",
+  "backround_color": "#3E4EB8",
+  "display" : "standalone"
+  
+  }

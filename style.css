@@ -1,0 +1,301 @@
+/*
+font-family: 'Abhaya Libre', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Cookie', cursive;
+font-family: 'Frank Ruhl Libre', serif;
+font-family: 'Great Vibes', cursive;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Prata', serif;
+font-family: 'Satisfy', cursive;
+*/
+
+.title {
+
+  font-family: 'Nanum Myeongjo', serif;
+  position:absolute;
+  text-align:center;
+  top:35%;
+  width:100%;
+  z-index:10;
+  font-size:35px;
+  /*color:white;*/
+  
+}
+/*
+.title {
+
+  font-family:'Great Vibes', cursive;
+  
+  position:absolute;
+  bottom: 8px;
+  left:15%;
+  right:30%;
+  top:35%;
+  text-align:center;
+  font-size:40px;
+  color:white;
+  z-index:10;
+  white-space:nowrap;
+  
+}
+*/
+
+.homeimage {
+
+  max-width: 100%;
+  max-height: 100vh;
+  margin:auto;
+  padding:0;
+  position:relative;
+
+  /* added for title */
+  float:left;
+}
+
+.circleprofile {
+
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+ /* width:50%;*/
+  width:180px; 
+  height:180px;
+}
+
+.menuicon {
+
+  /*width:35px;
+  height:5px;
+  background-color:black;*/
+  margin: 6px 0;
+  position:absolute;
+  top:5%;
+  left:5%;
+
+}
+
+/* DROP DOWN MENU */
+
+.dropbtn {
+
+  position:relative;
+  margin: 12px 0;
+  top:20%;
+  left:50%;
+  right: 40%;
+  z-index:10;
+  
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  //background-color: white;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 260px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ff5c5c;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size:30px;
+  font-family: 'Great Vibes', cursive;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* END OF DROP DOWN MENY*/
+
+
+
+
+
+/* PUSH SIDE MENU */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #ff5c5c;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Poiret One', cursive;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  position:absolute;
+  
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* CARD CODE */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5);
+  
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding:5px;
+  color:#ff5c5c;
+  background-color:white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+h2 {
+
+  /*font-family: 'Satisfy', cursive;*/
+  font-family: 'Nanum Myeongjo', serif;
+  /*font-family: 'Poiret One', cursive;*/
+ /* font-family: 'Great Vibes', cursive;*/
+  /*font-family: 'Frank Ruhl Libre', serif;*/
+  color:#ff5c5c;
+  font-size: 35px;
+
+  
+  
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.dot  {
+  height: 2px;
+  width: 2px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .active2 {
+  background-color: #717171;
+}
+
+.textstyle {
+
+  word-wrap: break-word;
+  width:70%;
+
+  text-align: justify;
+
+}
+
+#more, #more2, #more3, #more4 {
+  display: none;
+  
+  }
+
+.about {
+
+  text-align:justify; 
+  /*width:80%; */
+  word-wrap: break-word; 
+  margin:50px;
+  display:in-line-block;
+  font-size:18px;
+}  
+
+.aboutimage {
+
+  max-width: 100%;
+  max-height: 100vh;
+  margin:auto;
+  padding:0;
+  position:relative;
+
+  /* added for title */
+  /*float:left;*/
+}
+
+p {
+
+  margin:30px;
+  text-align:center;
+
+}
